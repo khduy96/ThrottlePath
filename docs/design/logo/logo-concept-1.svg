@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 100 100">
+  <!-- Concept 1 "Hẻm đúng giờ": clock arc + alley route escaping through the gap -->
+  <rect width="100" height="100" rx="22" fill="#0F2A3D"/>
+  <g transform="translate(50 50) scale(0.78) translate(-50 -50)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M63.5 21 A32 32 0 1 0 79 36.5" stroke="#F5A524" stroke-width="7"/>
+    <path d="M28 72 L40 72 L40 58 L54 58 L54 46 L78 22" stroke="#FFFFFF" stroke-width="7"/>
+    <path d="M66 20 L80 20 L80 34" stroke="#FFFFFF" stroke-width="7"/>
+    <circle cx="28" cy="72" r="6.5" fill="#F5A524"/>
+  </g>
+</svg>

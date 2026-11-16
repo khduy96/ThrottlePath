@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Logo concept 1 "Hẻm đúng giờ" (docs/design/logo/logo-concept-1.svg).
+     Drawn on a 100x100 grid, scaled into the 66dp safe zone of the 108dp adaptive canvas. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:pivotX="50"
+        android:pivotY="50"
+        android:scaleX="0.5616"
+        android:scaleY="0.5616"
+        android:translateX="4"
+        android:translateY="4">
+        <path
+            android:pathData="M63.5,21 A32,32 0 1,0 79,36.5"
+            android:strokeColor="#F5A524"
+            android:strokeWidth="7"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <path
+            android:pathData="M28,72 L40,72 L40,58 L54,58 L54,46 L78,22"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="7"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <path
+            android:pathData="M66,20 L80,20 L80,34"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="7"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <path
+            android:pathData="M21.5,72 a6.5,6.5 0 1,0 13,0 a6.5,6.5 0 1,0 -13,0"
+            android:fillColor="#F5A524" />
+    </group>
+</vector>

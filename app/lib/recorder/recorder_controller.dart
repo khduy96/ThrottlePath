@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
+import 'dart:ui' show Color;
 
 import 'package:flutter_foreground_task/flutter_foreground_task.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -120,6 +121,10 @@ class RecorderController extends Notifier<RecorderStatus> {
       serviceTypes: const [ForegroundServiceTypes.location],
       notificationTitle: mode == RecorderKeys.startNow ? 'Đang ghi chuyến đi' : 'Sẵn sàng',
       notificationText: 'Đang lấy vị trí…',
+      notificationIcon: const NotificationIcon(
+        metaDataName: 'com.throttlepath.NOTIFICATION_ICON',
+        backgroundColor: Color(0xFF0F2A3D),
+      ),
       notificationButtons: [
         NotificationButton(id: RecorderKeys.btnStop, text: mode == RecorderKeys.startNow ? 'Dừng' : 'Hủy'),
       ],

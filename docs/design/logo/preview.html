@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Throttle Path logo</title>
+<style>
+  body { margin: 0; padding: 48px; background: #F4F1EA; color: #0F2A3D; font-family: system-ui, sans-serif; }
+  h1 { margin: 0 0 8px; font-size: 40px; }
+  .lead { margin: 0 0 40px; color: #5A6670; }
+  section { background: #FFFFFF; border-radius: 16px; padding: 28px 32px; margin-bottom: 28px; }
+  h2 { margin: 0 0 4px; font-size: 24px; }
+  .idea { margin: 0 0 20px; color: #3D4A55; max-width: 760px; line-height: 1.5; }
+  .row { display: flex; flex-wrap: wrap; gap: 28px; align-items: flex-end; }
+  figure { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  figcaption { font-size: 13px; color: #5A6670; }
+  .brand { display: flex; align-items: center; gap: 12px; font-size: 26px; font-weight: 700; }
+  .dark { --fg: #FFFFFF; --ac: #F5A524; --bg: #0F2A3D; }
+  .light { --fg: #0F2A3D; --ac: #F5A524; --bg: #FFFFFF; }
+  .mono { --fg: #0F2A3D; --ac: #0F2A3D; }
+  .bgfill { fill: var(--bg); }
+  .light .bgfill { stroke: #D9DEE2; stroke-width: 1; }
+</style>
+</head>
+<body>
+
+<!-- Glyphs: drawn on a 100x100 grid, colors from --fg (main line) and --ac (accent) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- 1. Hẻm đúng giờ: clock arc + alley route escaping through the gap -->
+    <symbol id="c1" viewBox="0 0 100 100">
+      <g transform="translate(50 50) scale(0.78) translate(-50 -50)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M63.5 21 A32 32 0 1 0 79 36.5" stroke="var(--ac)" stroke-width="7"/>
+        <path d="M28 72 L40 72 L40 58 L54 58 L54 46 L78 22" stroke="var(--fg)" stroke-width="7"/>
+        <path d="M66 20 L80 20 L80 34" stroke="var(--fg)" stroke-width="7"/>
+        <circle cx="28" cy="72" r="6.5" fill="var(--ac)" stroke="none"/>
+      </g>
+    </symbol>
+    <!-- 2. Ghim giờ: map pin with clock hands at 08:15 -->
+    <symbol id="c2" viewBox="0 0 100 100">
+      <g transform="translate(50 50) scale(0.8) translate(-50 -50)">
+        <path d="M50 16 C33 16 22 29 22 45 C22 64 50 86 50 86 C50 86 78 64 78 45 C78 29 67 16 50 16 Z" fill="var(--ac)"/>
+        <circle cx="50" cy="45" r="17" fill="var(--bg, #0F2A3D)"/>
+        <g fill="none" stroke="var(--fg)" stroke-width="5" stroke-linecap="round">
+          <path d="M50 45 L42.5 49.5"/>
+          <path d="M50 45 L62 45"/>
+        </g>
+        <circle cx="50" cy="45" r="3" fill="var(--ac)"/>
+      </g>
+    </symbol>
+    <!-- 3. Tốc kế: speedometer whose scale is a dashed road, needle = throttle -->
+    <symbol id="c3" viewBox="0 0 100 100">
+      <g fill="none" stroke-linecap="round">
+        <path d="M20 62 A30 30 0 0 1 80 62" stroke="var(--fg)" stroke-width="7" stroke-dasharray="7 6"/>
+        <path d="M50 62 L66 42" stroke="var(--ac)" stroke-width="7"/>
+        <path d="M30 76 L70 76" stroke="var(--fg)" stroke-width="5"/>
+      </g>
+      <circle cx="50" cy="62" r="7" fill="var(--ac)"/>
+    </symbol>
+    <!-- 4. Chữ T: crossbar = handlebar, stem = alley route from the start dot -->
+    <symbol id="c4" viewBox="0 0 100 100">
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M27 28 L73 28" stroke="var(--ac)" stroke-width="10"/>
+        <path d="M50 28 L50 44 L40 44 L40 60 L54 60 L54 72" stroke="var(--fg)" stroke-width="9"/>
+      </g>
+      <circle cx="54" cy="74" r="7" fill="var(--ac)"/>
+    </symbol>
+    <!-- 5. A → B: two places joined by a winding alley, amber ground -->
+    <symbol id="c5" viewBox="0 0 100 100">
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M30 70 L30 56 L44 56 L44 44 L58 44 L58 32 L70 32" stroke="var(--fg)" stroke-width="7"/>
+      </g>
+      <circle cx="30" cy="72" r="8" fill="var(--fg)"/>
+      <circle cx="72" cy="30" r="10" fill="none" stroke="var(--fg)" stroke-width="6"/>
+    </symbol>
+  </defs>
+</svg>
+
+<h1>Throttle Path — chọn logo</h1>
+<p class="lead">Mỗi concept: icon chính · nền sáng · mặt nạ tròn (launcher OPPO) · 48px · icon thông báo một màu · ghép chữ.</p>
+
+<section>
+  <h2>1 · Hẻm đúng giờ</h2>
+  <p class="idea">Vòng cung đồng hồ + đường hẻm gấp khúc thoát ra qua khe hở. Nói được cả "đúng giờ" lẫn "chặt hẻm" — điểm riêng của app.</p>
+  <div class="row">
+    <figure class="dark"><svg width="200" height="200" viewBox="0 0 100 100"><rect class="bgfill" width="100" height="100" rx="22"/><use href="#c1"/></svg><figcaption>Icon chính</figcaption></figure>
+    <figure class="light"><svg width="120" height="120" viewBox="0 0 100 100"><rect class="bgfill" width="100" height="100" rx="22"/><use href="#c1"/></svg><figcaption>Nền sáng</figcaption></figure>
+    <figure class="dark"><svg width="120" height="120" viewBox="0 0 100 100"><circle class="bgfill" cx="50" cy="50" r="50"/><use href="#c1"/></svg><figcaption>Mặt nạ tròn</figcaption></figure>
+    <figure class="dark"><svg width="48" height="48" viewBox="0 0 100 100"><rect class="bgfill" width="100" height="100" rx="22"/><use href="#c1"/></svg><figcaption>48px</figcaption></figure>
+    <figure class="mono"><svg width="24" height="24" viewBox="0 0 100 100"><use href="#c1"/></svg><figcaption>Thông báo</figcaption></figure>
+    <div class="brand dark"><svg width="48" height="48" viewBox="0 0 100 100"><rect class="bgfill" width="100" height="100" rx="22"/><use href="#c1"/></svg><span style="color:#0F2A3D">Throttle Path</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>2 · Ghim giờ</h2>
+  <p class="idea">Ghim bản đồ có kim đồng hồ chỉ 08:15 (giờ anh/chị hay rời nhà). Dễ hiểu ngay là app về địa điểm + giờ giấc; hình khối đặc nên rất rõ ở cỡ nhỏ.</p>
+  <div class="row">
+    <figure class="dark"><svg width="200" height="200" viewBox="0 0 100 100"><rect class="bgfill" width="100" height="100" rx="22"/><use href="#c2"/></svg><figcaption>Icon chính</figcaption></figure>
+    <figure class="light"><svg width="120" height="120" viewBox="0 0 100 100"><rect class="bgfill" width="100" height="100" rx="22"/><use href="#c2"/></svg><figcaption>Nền sáng</figcaption></figure>
+    <figure class="dark"><svg width="120" height="120" viewBox="0 0 100 100"><circle class="bgfill" cx="50" cy="50" r="50"/><use href="#c2"/></svg><figcaption>Mặt nạ tròn</figcaption></figure>
+    <figure class="dark"><svg width="48" height="48" viewBox="0 0 100 100"><rect class="bgfill" width="100" height="100" rx="22"/><use href="#c2"/></svg><figcaption>48px</figcaption></figure>
+    <figure class="mono" style="--bg:#F4F1EA"><svg width="24" height="24" viewBox="0 0 100 100"><use href="#c2"/></svg><figcaption>Thông báo</figcaption></figure>
+    <div class="brand dark"><svg width="48" height="48" viewBox="0 0 100 100"><rect class="bgfill" width="100" height="100" rx="22"/><use href="#c2"/></svg><span style="color:#0F2A3D">Throttle Path</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>3 · Tốc kế</h2>
+  <p class="idea">Đồng hồ tốc độ xe máy, vạch chia là vạch kẻ đường, kim màu hổ phách là "tay ga". Đậm chất xe máy, cá tính hơn, nhưng ít nói về "tuyến đường".</p>
+  <div class="row">
+    <figure class="dark"><svg width="200" height="200" viewBox="0 0 100 100"><rect class="bgfill" width="100" height="100" rx="22"/><use href="#c3"/></svg><figcaption>Icon chính</figcaption></figure>
+    <figure class="light"><svg width="120" height="120" viewBox="0 0 100 100"><rect class="bgfill" width="100" height="100" rx="22"/><use href="#c3"/></svg><figcaption>Nền sáng</figcaption></figure>
+    <figure class="dark"><svg width="120" height="120" viewBox="0 0 100 100"><circle class="bgfill" cx="50" cy="50" r="50"/><use href="#c3"/></svg><figcaption>Mặt nạ tròn</figcaption></figure>
+    <figure class="dark"><svg width="48" height="48" viewBox="0 0 100 100"><rect class="bgfill" width="100" height="100" rx="22"/><use href="#c3"/></svg><figcaption>48px</figcaption></figure>
+    <figure class="mono"><svg width="24" height="24" viewBox="0 0 100 100"><use href="#c3"/></svg><figcaption>Thông báo</figcaption></figure>
+    <div class="brand dark"><svg width="48" height="48" viewBox="0 0 100 100"><rect class="bgfill" width="100" height="100" rx="22"/><use href="#c3"/></svg><span style="color:#0F2A3D">Throttle Path</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>4 · Chữ T</h2>
+  <p class="idea">Chữ T của "Throttle": thanh ngang là ghi-đông xe, thân chữ là đường hẻm gấp khúc đi từ chấm xuất phát. Kiểu monogram, gọn và dễ nhớ.</p>
+  <div class="row">
+    <figure class="dark"><svg width="200" height="200" viewBox="0 0 100 100"><rect class="bgfill" width="100" height="100" rx="22"/><use href="#c4"/></svg><figcaption>Icon chính</figcaption></figure>
+    <figure class="light"><svg width="120" height="120" viewBox="0 0 100 100"><rect class="bgfill" width="100" height="100" rx="22"/><use href="#c4"/></svg><figcaption>Nền sáng</figcaption></figure>
+    <figure class="dark"><svg width="120" height="120" viewBox="0 0 100 100"><circle class="bgfill" cx="50" cy="50" r="50"/><use href="#c4"/></svg><figcaption>Mặt nạ tròn</figcaption></figure>
+    <figure class="dark"><svg width="48" height="48" viewBox="0 0 100 100"><rect class="bgfill" width="100" height="100" rx="22"/><use href="#c4"/></svg><figcaption>48px</figcaption></figure>
+    <figure class="mono"><svg width="24" height="24" viewBox="0 0 100 100"><use href="#c4"/></svg><figcaption>Thông báo</figcaption></figure>
+    <div class="brand dark"><svg width="48" height="48" viewBox="0 0 100 100"><rect class="bgfill" width="100" height="100" rx="22"/><use href="#c4"/></svg><span style="color:#0F2A3D">Throttle Path</span></div>
+  </div>
+</section>
+
+<section>
+  <h2>5 · A → B (nền hổ phách)</h2>
+  <p class="idea">Tối giản nhất: chấm đặc là nơi đi, vòng tròn là nơi đến, nối bằng đường hẻm bậc thang. Nền hổ phách nổi bật giữa các icon khác trên màn hình.</p>
+  <div class="row">
+    <figure style="--fg:#0F2A3D; --bg:#F5A524"><svg width="200" height="200" viewBox="0 0 100 100"><rect class="bgfill" width="100" height="100" rx="22"/><use href="#c5"/></svg><figcaption>Icon chính</figcaption></figure>
+    <figure style="--fg:#F5A524; --bg:#0F2A3D"><svg width="120" height="120" viewBox="0 0 100 100"><rect class="bgfill" width="100" height="100" rx="22"/><use href="#c5"/></svg><figcaption>Nền tối</figcaption></figure>
+    <figure style="--fg:#0F2A3D; --bg:#F5A524"><svg width="120" height="120" viewBox="0 0 100 100"><circle class="bgfill" cx="50" cy="50" r="50"/><use href="#c5"/></svg><figcaption>Mặt nạ tròn</figcaption></figure>
+    <figure style="--fg:#0F2A3D; --bg:#F5A524"><svg width="48" height="48" viewBox="0 0 100 100"><rect class="bgfill" width="100" height="100" rx="22"/><use href="#c5"/></svg><figcaption>48px</figcaption></figure>
+    <figure class="mono"><svg width="24" height="24" viewBox="0 0 100 100"><use href="#c5"/></svg><figcaption>Thông báo</figcaption></figure>
+    <div class="brand" style="--fg:#0F2A3D; --bg:#F5A524"><svg width="48" height="48" viewBox="0 0 100 100"><rect class="bgfill" width="100" height="100" rx="22"/><use href="#c5"/></svg><span>Throttle Path</span></div>
+  </div>
+</section>
+
+</body>
+</html>
