@@ -1,0 +1,23 @@
+{
+  "places": [
+    { "id": "home", "kind": "home", "name": "Nhà",      "lat": 10.800000, "lng": 106.700000, "radius_m": 100 },
+    { "id": "work", "kind": "work", "name": "Công ty",  "lat": 10.770000, "lng": 106.690000, "radius_m": 100 },
+    { "id": "shop", "kind": "stop", "name": "Cửa Hàng", "lat": 10.790000, "lng": 106.695000, "radius_m": 50 }
+  ],
+  "landmarks": [
+    { "name": "Tân Thành",              "lat": 10.785000, "lng": 106.693000 },
+    { "name": "Vòng xoay Lê Đại Hành", "lat": 10.775000, "lng": 106.691000 }
+  ],
+  "plans": [
+    { "id": "morning", "name": "Sáng", "direction": "to_work", "window_start": "07:30",
+      "legs": [
+        { "seq": 1, "from": "home", "to": "shop", "arrive_by": "08:30", "stop_after_min": 2, "default_min": 10 },
+        { "seq": 2, "from": "shop", "to": "work", "arrive_by": "08:45", "default_min": 13 }
+      ] },
+    { "id": "evening_1", "name": "Chiều 1", "direction": "to_home", "window_start": "18:00",
+      "legs": [ { "seq": 1, "from": "work", "to": "shop", "default_min": 13 } ] },
+    { "id": "evening_2", "name": "Chiều 2", "direction": "to_home", "depart_at": "21:30",
+      "legs": [ { "seq": 1, "from": "shop", "to": "home", "default_min": 10 } ] }
+  ],
+  "settings": { "work_days": "1,2,3,4,5", "buffer_min": 0, "notify_before_min": 5, "explore_enabled": 1 }
+}

@@ -1,0 +1,45 @@
+# Secrets (never commit)
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+.env
+.env.*
+!.env.example
+google-services.json
+service-account*.json
+*.keystore
+*.jks
+key.properties
+local.properties
+
+# Server (Cloudflare Worker)
+node_modules/
+.wrangler/
+dist/
+coverage/
+
+# App (Flutter)
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+build/
+app/android/.gradle/
+app/android/captures/
+*.iml
+.idea/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# Personal spike config (home/work coordinates)
+server/scripts/*.local.json
+server/scripts/*.local.html
+
+# Personal seed config (real coordinates and schedule)
+server/*.local.json
+
+# Personal nav links with real coordinates (local only)
+link.txt
